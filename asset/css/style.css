@@ -1,0 +1,289 @@
+header{
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    
+}
+nav{
+    height: 10vh; 
+    display: flex;
+    justify-content: center;
+}
+/* nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    list-style: none;
+}
+
+ul.ul2{
+    display: none;
+}
+
+nav .nav2{
+    color: red;
+} */
+nav a{
+    text-decoration: none;
+}
+
+nav .ul1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    list-style: none;
+}
+.ul2{
+    display: none;
+}
+
+/*#region accueil essai1*/
+.section-accueil{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-accueil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: palegoldenrod;
+    width: 70vw;
+    height: 70vh;
+}
+.gauche{
+    width: 30%;
+    height: 95%;
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1{
+    background-color: yellow;
+    height: 70%;
+    width: 100%;
+}
+.box6{
+    background-color: rgb(159, 201, 230);
+    width: 100%;
+    height: 25%;
+
+}
+.droite{
+    width: 60%;
+    height: 95%;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.haut{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(79, 240, 79);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.box2{
+    width: 45%;
+    height: 45%;
+    background-color: red;
+}
+.box3{
+    width: 45%;
+    height: 45%;
+    background-color: red;
+}
+.box4{
+    width: 45%;
+    height: 45%;
+    background-color: red;
+}
+.box5{
+    width: 45%;
+    height: 45%;
+    background-color: red;
+}
+.bas{
+    width: 100%;
+    height: 25%;
+    background-color: palegreen;
+    
+}
+/*#endregion  */
+/*#region main*/
+.section1{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.accueil{
+    width: 70vw;
+    height: 80vh;
+    /* background-color: rgb(238, 14, 51); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.top{
+ width: 100%;
+ height: 65%;
+ /* background-color: pink; */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.box-1{
+ width: 35%;
+ height: 100%;
+ background-color: rgb(224, 242, 248);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.quatre-box{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(187, 228, 90); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.box-2{
+    width: 45%;
+    height: 45%;
+    background-image: url(../img/parc.avif);
+    background-position: center;
+    background-size: cover;
+}
+.box-3{
+    width: 45%;
+    height: 45%;
+    background-image: url(../img/sac.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.box-4{
+    width: 45%;
+    height: 45%;
+    background-color:  rgb(224, 242, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-5{
+    width: 45%;
+    height: 45%;
+    background-image: url(../img/montre.jpg);
+    background-position: center;
+    background-position-x: left;
+    background-size: cover;
+}
+
+.bottom{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgb(43, 5, 11);   */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.box-6{
+    width: 35%;
+    height: 100%;
+    background-image: url(../img/boutique.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.box-7{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(224, 242, 248); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+    padding: 2rem;
+    text-align: justify;
+    overflow: auto;
+}
+h2{
+    padding-left: 2rem;
+}
+/*#endregion main*/
+
+/*#region responsive*/
+    /* medium screen   768px */
+
+@media (max-width : 768px){
+    .top{
+        flex-direction: column;
+        /* background-color: rgb(14, 192, 38); */
+        justify-content: space-evenly;
+    }
+    .box-1{ 
+        width: 100%;
+        height: 35%;
+    }
+    .quatre-box{
+        width: 100%;
+        height: 60%;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-6{
+        width: 100%;
+        height: 48%;  
+        background-image: url(asset/img/porte.png);
+    }
+    .box-7{
+        width: 100%;
+        height: 48%;  
+    }
+}
+
+@media (max-width : 640px){
+
+    .box-4{
+        width: 100%;
+        height: 50%; background-color: red;
+    } 
+    .box-5{
+        display: none;
+    }
+    .ul2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        list-style: none;
+        cursor: pointer;
+    }
+    nav .ul1{
+        display: none;
+    }
+
+    .nav-img{
+        width: 8vw;
+    }
+    
+}
+
+/*#endregion responsive*/
